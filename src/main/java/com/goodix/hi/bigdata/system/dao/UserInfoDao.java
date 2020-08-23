@@ -1,11 +1,12 @@
-package com.goodix.hi.bigdata.system.service;
+package com.goodix.hi.bigdata.system.dao;
 
 import com.goodix.hi.bigdata.system.entity.UserInfo;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-public interface UserService {
-
+@Repository
+public interface UserInfoDao {
     int deleteByPrimaryKey(Integer id);
 
     int insert(UserInfo record);
